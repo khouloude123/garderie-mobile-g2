@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screen/splash_screen.dart';
+
 void main() {
   runApp(const MaGarderieApp());
 }
@@ -9,12 +11,10 @@ class MaGarderieApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Ma Garderie',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(child: Text('Ma Garderie')),
-      ),
+      home: SplashScreen(),
     );
   }
 }
